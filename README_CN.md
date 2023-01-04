@@ -9,13 +9,13 @@ HUIS UI CREATOR可以从多个设备的按键中挑选出您常用功能的按�
 
 ## 如何使用
 
-####谨慎
+#### 谨慎
 
 此存储库不分发应用程序二进制文件。 确认后述“如何构建”后，需要构建并打包此仓库的源码。
 
 此外，使用 HUIS UI CREATOR 时，需要将 HUIS 主机连接到 PC。
 
-####更新文件
+#### 更新文件
 
 要反映使用 HUIS UI CREATOR 创建的遥控器，需要更新 HUIS。
 请参考[这里（如何更新HUIS REMOTE CONTROLLER）](firmware/readme.md)。
