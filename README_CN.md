@@ -102,38 +102,38 @@ HUIS UI CREATOR可以从多个设备的按键中挑选出您常用功能的按�
 
 4. 使用以下命令构建本机模块。 （对于 Windows 32 位，Mac 不需要）
 
-         $ cd 节点模块
-         $ cd usb_dev
-         $ 设置 HOME=~/.electron-gyp
-         $ node-gyp rebuild --target=1.4.10 --arch=ia32 --dist-url=https://atom.io/download/atom-shell
-
+        $ cd node_modules
+        $ cd usb_dev
+        $ set HOME=~/.electron-gyp
+        $ node-gyp rebuild --target=1.4.10 --arch=ia32 --dist-url=https://atom.io/download/atom-shell
+        
    请相应地更改 Electron 版本 `--target`。 此外，如果您为 Windows 64 位构建，请更改为“--arch=x64”。
 
 5. 再次进入`huis-ui-creator`的根目录。
 
 6. 使用以下命令构建 TypeScript 和 SCSS。
 
-         $咕噜构建
+        $ grunt build
 
 对于 Mac，添加“--platform=darwin”，如下所示。
 
-         $ grunt build --platform=darwin
+        $ grunt build --platform=darwin
 
 7. grunt构建完成后，会在`www/app`下输出编译好的TypeScript和SCSS。 将以下文件和目录复制到 Electron 打包的 www 目录中。
 
    -package.json
    -main.js
-   - node_modules 目录
+   -node_modules 目录
 
    复制 `node_modules` 目录时忽略任何“路径太长”错误或警告。
 
 #### 包装
 如上所述使用grunt构建后复制文件后，您可以通过执行以下命令对其进行打包。 （对于 Windows 32 位）
 
-     $ cd <huis-ui-creator 目录>\www
-     $ electron-packager . <app name> --platform=win32 --arch=ia32 --electron-version=1.4.10 --ignore="node_modules/(grunt*|electron-rebuild)" --ignore=". git" --ignore="服务引用" --ignore="docs" --ignore="obj" --ignore="tests/*" --ignore="www" --ignore="platforms" --ignore ="-x64$" --ignore="-ia32$"
+    $ cd <huis-ui-creator dir>\www
+    $ electron-packager . <app name> --platform=win32 --arch=ia32 --electron-version=1.4.10 --ignore="node_modules/(grunt*|electron-rebuild)" --ignore=".git" --ignore="Service References" --ignore="docs" --ignore="obj" --ignore="tests/*" --ignore="www" --ignore="platforms" --ignore="-x64$" --ignore="-ia32$"
 
-选请相应地更改 ron 版本 `--target`。 此外，如果您为 Windows 64 位构建，请更改为“--arch=x64”。 但是，请指定与构建上述本机模块时相同的 `--target` 和 `--arch` 选项。
+选请相应地更改 Electron 版本 `--target`。 此外，如果您为 Windows 64 位构建，请更改为“--arch=x64”。 但是，请指定与构建上述本机模块时相同的 `--target` 和 `--arch` 选项。
 为 Mac 64 位构建时，请更改为 `--platform=darwin`、`--arch=x64`。
 
 `<app name>` 用于打包后的文件存放目录，可执行文件名等。 请指定任何应用名称。
@@ -141,6 +141,7 @@ HUIS UI CREATOR可以从多个设备的按键中挑选出您常用功能的按�
 打包完成后，会在`<app name>-win32-ia32`目录下生成包（Windows 32位，Mac 64位`<app name>-darwin-x64`）。
 
 启动 `<app name>.exe`（对于 Mac 为 `<app name>.app`）并确认它可以工作。
+
 ##免责声明
 本源代码用于开发，产品版本在设计等方面存在差异。
 
