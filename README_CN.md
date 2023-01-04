@@ -76,15 +76,15 @@ HUIS UI CREATOR可以从多个设备的按键中挑选出您常用功能的按�
 
 搭建前，准备如下开发环境。
 
-| 要求 | 备注 |
-|:------------------------------------------------ --------------------------|:-------------------- - --------------------------|
-| [Python 2.6 或 2.7](https://www.python.org/downloads/) | |
-| [红宝石](http://rubyinstaller.org/) | |
-| [Node.js](http://nodejs.org/download/ ) | |
-| [指南针](http://compass-style.org/) | |
-| [Grunt CLI](https://github.com/gruntjs/grunt-cli) | |
-| [node-gyp 的编译器](https://github.com/TooTallNate/node-gyp/) | 编译原生 Node.js 模块所必需的 |
-| [电子包装器](https://github.com/electron-userland/electron-packager) | |
+| Requirement                                                                 | Remarks                                       |
+|:----------------------------------------------------------------------------|:----------------------------------------------|
+| [Python 2.6 or 2.7](https://www.python.org/downloads/)                      |                                               |
+| [Ruby](http://rubyinstaller.org/)                                           |                                               |
+| [Node.js](http://nodejs.org/download/ )                                     |                                               |
+| [Compass](http://compass-style.org/)                                        |                                               |
+| [Grunt CLI](https://github.com/gruntjs/grunt-cli)                           |                                               |
+| [compiler for node-gyp](https://github.com/TooTallNate/node-gyp/)           | Required for compiling native Node.js modules |
+| [electron-packager](https://github.com/electron-userland/electron-packager) |                                               |
 
 #### 构建说明
 
